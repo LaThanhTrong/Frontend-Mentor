@@ -1,0 +1,66 @@
+// Universal box-sizing.
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0;
+    //padding: 0;
+}
+
+body{
+    line-height: 1.6;
+    font-family: $font-body;
+    font-size: 1.0625rem;
+}
+
+a, a:visited{
+    text-decoration: none;
+}
+header{
+    margin-bottom: 3.125rem;
+    @media screen and (min-width: 64rem) {
+        margin-bottom: 6.25rem;
+    }
+    img{
+        width: 7.5rem;
+        @media screen and (min-width: 64rem) {
+            width: 12.5rem;
+        }
+    }
+}
+
+footer{
+    margin-top: 7.8125rem;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 64rem) {
+        margin-top: 0px;
+        justify-content: flex-end;
+    }
+    >a{
+        margin-right: .9375rem;
+        transform: translateY(0px);
+        transition: transform 300ms ease-in-out;
+        &:last-child{
+            margin-right: 0px;
+        }
+        &:hover{
+            transform: translateY(-3px);
+        }
+    }
+    i.fab{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.7px solid white;
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        color: white;
+        &:hover{
+            border-color: $soft-Magenta;
+            color: $soft-Magenta;
+        }
+    }
+}
