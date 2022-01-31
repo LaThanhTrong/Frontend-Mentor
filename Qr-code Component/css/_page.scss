@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    margin-top: 9.5rem;
+    margin-bottom: 9.375rem;
+    justify-content: center;
+}
+div.box{
+    margin: 0 auto;
+    max-width: 20rem;
+    height: 100%;
+    padding: 1.125rem 1.125rem 0rem;
+    background-color: $white;
+    border-radius: 20px;
+}
+.imageQR-Code{
+    img{
+        border-radius: 20px;
+        width: 100%;
+        max-height: 100%;
+    }
+}
+.heroText{
+    text-align: center;
+    margin: 1.875rem 0.8rem 0rem;
+    text-overflow: ellipsis;
+    h1{
+        font-weight: 900;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    p{
+        margin-top: .75rem;
+        margin-bottom: 1.875rem;
+        font-size: .9375rem;
+        color: $grayishBlue;
+    }
+}
+
